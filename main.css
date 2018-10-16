@@ -13,11 +13,13 @@ body {
 	display: block;
 	position: absolute;
 	left: 50%;
-	top: 50%;
+	top:50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 }
-
+.navbar {
+	background-color: transparent;
+}
 .rectangle {
 	padding: 60px 100px;
 	color: black;
@@ -26,15 +28,15 @@ body {
 	height: auto;
 }
 
-.card {
-	padding: 2px;
+.card-1 {
+	padding: 20px;
 	background-color: grey;
 	color: white;
 	width: 100%;
-	height: 400px;
-	margin: 60px 80px;
+	height: auto;
 }
-/*NAVBAR*/
+/*Responsive CSS*/
+/*Phone Size*/
 @media (max-width: 992px) {
 	.navbar {
 		background-color: black;
@@ -43,10 +45,14 @@ body {
 	.rectangle {
 		padding: 30px 50px;
 	}
-	.card {
-		margin: 30px 40px;
+	.card-1 {
+		width: 70%;
+		background-color: red;
 	}
 }
+
+
+
 /*Repeating CSS*/
 nav {cursor: pointer;}
 /*Buttons*/
