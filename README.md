@@ -1,2 +1,0 @@
-# Media-Design
-Yeet
