@@ -1,0 +1,57 @@
+
+.middle-page {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+	position: relative;
+	height: auto;
+}
+/*------------------------------------------------*/
+/*Profile Card CSS*/
+/*------------------------------------------------*/
+.profile-card {
+    background-color: rgb(58, 58, 58);
+    padding: 24px;
+}
+/*------------------------------------------------*/
+.profile-bg {
+    background-color: rgb(48, 49, 54);
+    height: 70px;
+}
+/*------------------------------------------------*/
+/*Text & Image CSS For Profile Card (AESTHETICS)*/
+/*------------------------------------------------*/
+.profile-card h1 {font-size: 24px; font-weight: bold;}
+.profile-card h4 {margin-top: -20px;font-size: 16px; color: rgb(194, 194, 194);}
+.profile-card .divider {
+    border: 1px solid grey; 
+    width: 60%;
+    margin: auto; 
+    margin-top: 10px; margin-bottom: 10px;
+}
+.profile-card article {color: white;}
+/*------------------------------------------------*/
+.profile-card img {
+    margin: auto;
+    display: block;
+	border: 2px solid white;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    margin-top: -60px;
+}
+/*------------------------------------------------*/
+/*MORE-INFO CSS*/
+/*------------------------------------------------*/
+.more-info {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    padding: 40px;
+    height: auto;
+}
+.more-info img {
+    max-height: 30px;
+    max-width: 30%;
+}
+/*------------------------------------------------*/

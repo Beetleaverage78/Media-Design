@@ -1,5 +1,9 @@
 /*Font Setup*/
 @import url('https://fonts.googleapis.com/css?family=Capriola|Montserrat|Overpass|Raleway');
+/*FONT INDIVIDUAL CLASSES*/
+.Capriola {font-family: Capriola, sans-serif;} .Montserrat{font-family: Montserrat, sans-serif;}
+.Overpass {font-family: Overpass, sans-serif;} .Raleway{font-family: Raleway, sans-serif;}
+/*BODY CSS*/
 body {
 	background-color: grey;
 	margin: 0;
@@ -11,13 +15,12 @@ body {
 .outline-1 {
 	background-color: #677c91;
 	margin: 10px;
-	height: 300px;
+	height: auto;
 }
 /*------------------------------------------------------------------------------------------*/
-/*HOME CSS*/
+/*CSS That Stays True Across ALl Pages*/
 /*------------------------------------------------------------------------------------------*/
 h1 {
-	font-size: 2em;
 	color: rgb(255, 255, 255);
 	line-height: 1.15em;
 	margin: 20px 0 ;
@@ -29,48 +32,60 @@ h1 {
 	padding: 10px;
 	height: auto;
 }
-
-.footer {
-	background-color: rgb(49, 49, 49);
-	padding: 30px;
-	color: white;
-	height: auto;
-}
-
-/* HERO CSS */
+/*------------------------------------------------------------------------------------------*/
+/*MAIN HERO CONTAINER CSS*/
+/*------------------------------------------------------------------------------------------*/
 .hero {
-    /* Sizing */
+    margin: 0px;
+    /*Sizing CSS*/
     width: 100vw;
     height: 100vh;
     
-    /* Flexbox stuff */
+    /*Flexbox CSS*/
     display: flex;
     justify-content: center;
-    align-items: center;
     
-    /* Text styles */
+    /*Text CSS*/
     text-align: center;
     color: white; 
     
-    /* Background styles */
+    /*Background CSS*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/placeholder.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
-/*TEXT TITLES AND SUBTITLES*/
+/*------------------------------------------------------------------------------------------*/
+/*TEXT & ICONS & BORDER*/
+/*------------------------------------------------------------------------------------------*/
 .hero h1 {
-	font-size: 64px;
+    font-size: 64px;
     margin-top: 0;
 }
 .hero h2 {
-	margin-top: -20px;
-	font-size: 12px;
+    font-size: 18px;
+    margin-top: -20px;
 }
-
-/*BUTTON*/
+/*HERO AESTHETICS (BORDER & ICON)*/
+/*------------------------------------------------------------------------------------------*/
+.bottom-border {
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+.down-arrow {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    z-index: 2;
+}
+/*------------------------------------------------------------------------------------------*/
+/*HERO BUTTON*/
+/*------------------------------------------------------------------------------------------*/
 .hero .btn {
     /* Positioning and sizing */
     display: block;
@@ -91,35 +106,35 @@ h1 {
     border: 3px solid white; 
     border-radius: 20px;
 }
+/*BUTTON HOVER*/
+/*------------------------------------------------------------------------------------------*/
 .hero .btn:hover {
 	color: black;
 	background-color: white;
 }
 /*------------------------------------------------------------------------------------------*/
-/*ABOUT PAGE CSS*/
+/*FOOTER CSS*/
 /*------------------------------------------------------------------------------------------*/
-.column {
-	margin: 50px;
+.footer {
+	background-color: rgb(49, 49, 49);
+	padding: 30px;
+	color: white;
+	height: auto;
 }
-
-
 /*------------------------------------------------------------------------------------------*/
 
 
 
-
-
-
-
-/*CENTER CSS REFERENCE
-{
-	background-color: silver;
+/*CENTER CSS REFERENCE*/
+/*------------------------------------------------------------------------------------------*/
+    /*
+    background-color: silver;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
-}
-*/
+    transform: translate(-50%, -50%);
+    */
+/*------------------------------------------------------------------------------------------*/
 
 
 
