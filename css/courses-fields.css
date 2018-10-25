@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 html {height: 100%;}
-
 	body {
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/placeholder.jpg') no-repeat 50% 50% fixed; 
 		-webkit-background-size: cover;
@@ -9,21 +7,163 @@ html {height: 100%;}
 		background-size: cover;
 	}
 
-
-.middle-grid h1 {color: white;}
-.middle-grid {
-	margin: auto;
-	max-width: 1000px;
-	width: 100%;
-	padding: 30px;
+/*Middle Content CSS*/
+/*----------------------------------------*/
+.background {
+	background-color: rgb(36, 40, 65, 0.9);
+	border-top: 4px solid white;
+	width: 70%;
+	height: auto;
 	position: relative;
-	top: 10%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	margin-top: 120px;
 	}
-	.columns {margin: 30px;}
-
-
-
-
-
-
-
+	.background .bg-content {
+		margin-top: 60px;
+		padding: 0px 50px;
+		color: white;
+	}
+	.background h1 {
+		font-size: 40px;
+		font-weight: bold;
+	}
+	.background p {
+		padding: 10px;
+	}
+	.divider {
+		border-bottom: 2px solid grey;
+		width: 100%;
+	}
+/*----------------------------------------*/
+/*COLOR VARIABLES*/
+/*This is dedicated to each specialized field*/
+/*----------------------------------------*/
+.topic-1 {
+	--bg-color: rgb(33, 27, 66);
+	--bg-color-transparent: transparent;
+	--bg-color-light: rgb(67, 87, 131);
+	--text-color-hover: rgb(255, 255, 255);
+	--box-shadow-color: rgb(26, 33, 49);
+  }
+  
+  .topic-2 {
+	--bg-color: #B8F9D3;
+	--bg-color-transparent: transparent;
+	--bg-color-light: #394e42;
+	--text-color-hover: #4C5656;
+	--box-shadow-color: rgba(184, 249, 211, 0.48);
+  }
+  
+  .topic-3 {
+	--bg-color: #CEB2FC;
+	--bg-color-transparent: transparent;
+	--bg-color-light: rgb(90, 85, 97);
+	--text-color-hover: #fff;
+	--box-shadow-color: rgba(206, 178, 252, 0.48);
+  }
+  
+  .topic-4{
+	--bg-color: #DCE9FF;
+	--bg-color-transparent: transparent;
+	--bg-color-light: #494c50;
+	--text-color-hover: #4C5656;
+	--box-shadow-color: rgba(220, 233, 255, 0.48);
+  }
+/*----------------------------------------*/
+/*CARD CSS*/  
+/*----------------------------------------*/
+  .card-1 {
+	width: auto;
+	height: 321px;
+	background: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+	transition: all 0.3s ease-out;
+	text-decoration: none;
+	margin: 20px;
+  }
+/*----------------------------------------*/
+  /*Card Animation CSS*/
+  .card-1:hover {
+	transform: translateY(-5px) scale(1.005) translateZ(0);
+	box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+	  0 24px 46px var(--box-shadow-color);
+  }
+  .card-1:hover .overlay {
+	transform: scale(4) translateZ(0);
+  }
+  .card-1:hover .circle {
+	border-color: var(--bg-color-light);
+	background: var(--bg-color-transparent);
+  }
+  .card-1:hover .circle:after {
+	background: var(--bg-color-transparent);
+  }
+  .card-1:hover p {
+	color: var(--text-color-hover);
+  }
+  .card-1:active {
+	transform: scale(1) translateZ(0);
+	box-shadow: 0 15px 24px rgba(0,0,0,0.11),
+	  0 15px 24px var(--box-shadow-color);
+  }
+/*----------------------------------------*/
+  /*Card Text CSS*/
+  .card-1 p {
+	font-size: 17px;
+	color: #4C5656;
+	margin-top: 30px;
+	z-index: 1000;
+	transition: color 0.3s ease-out;
+  }
+/*----------------------------------------*/
+  /*Circle Image CSS*/
+  .circle {
+	width: 156px;
+	height: 156px;
+	border-radius: 50%;
+	background: #fff;
+	border: 4px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+	transition: all 0.3s ease-out;
+  }
+  .circle:after {
+	content: "";
+	width: 118px;
+	height: 118px;
+	display: block;
+	position: absolute;
+	background: var(--bg-color-transparent);
+	border-radius: 50%;
+	top: 7px;
+	left: 7px;
+	transition: opacity 0.3s ease-out;
+  }
+/*----------------------------------------*/
+  /*Circle Overlay CSS*/
+  .overlay {
+	width: 122px;
+	position: absolute; 
+	height: 122px;
+	border-radius: 50%;
+	background: var(--bg-color);
+	top: 70px;
+	left: 70px;
+	z-index: 0;
+	transition: transform 0.3s ease-out;
+  }
+  /*----------------------------------------*/
