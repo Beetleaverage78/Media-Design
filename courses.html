@@ -3,96 +3,100 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Test.dab | Yeet.html</title>
-	<!--Local CSS/JS-->
+	<link rel="icon" href="assets/random_logo.png">
+	<title>Courses | courses.html</title>
+	<!--External CSS Links (Mainly Used for Columns)-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+	<!--Local CSS/JS-->
 	<link rel="stylesheet" href="css/navbar.css"  type="text/css"/>
     <link rel="stylesheet" href="main.css"  type="text/css"/>
 	<link rel="stylesheet" href="css/courses-fields.css" type="text/css"/>
 </head>
 
 <body>
+	<!--Navigation Bar HTML-->
 	<header>
-		<a href="index.html" id="logo"><img src="https://tinyurl.com/yamzsq8b"></a>
+		<a title="Course Selector" href="index.html" id="logo"><img src="assets/random_logo.png" alt="course-information-logo"/></a>
 		<nav>
-			<a href="#" id="menu-icon"></a>
+			<a href="index.html" id="menu-icon"><img src="assets/burger.png" alt="burger-icon"/></a>
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
+				<li><a href="mediaD.html">Media Design</a></li>
 				<li><a href="courses.html" class="current">Courses</a></li>
-				<li><a href="victoria.html">Victoria</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="contact.html">Contact</a></li>	
 			</ul>
 		</nav>
 	</header>
 
-
-
-
-
-<div class="background has-text-left">
+<!--Main Content - Four Columns, Two Rows - HTML-->
+<div class="background">
 	<div class="bg-content">
+		
+		<!--Title HTML-->
 		<h1 class="Overpass has-text-centered">Specializations</h1>
 		<div class="divider" style="margin-top: 20px;"></div>
+		
 		<div class="columns">
-			<section class="column is-half">
+			<section class="column is-half"><!--1st Column-->
 
-				<a href="#" class="card-1 topic-1">
+				<a href="fieldpages/3D.html" class="card-1 three-d">
 					<div class="overlay">
 					</div>
 				<div class="circle">
-					<img style="border-radius: 50%;" src="assets/Worlds_Ehnel.png"/>
-
+					<img title="" style="border-radius: 50%;" src="assets/3D.png" alt="3D-Design-Image"/>
 				</div>
-					<p>ArtForWeebs</p>
+					<p>3D Design</p>
 				</a>
 
 			</section>
-			<section class="column is-half">
 
-				<a href="#" class="card-1 topic-2">
+			<section class="column is-half"><!--2nd Column-->
+
+				<a href="fieldpages/creativec.html" class="card-1 creative-c">
 					<div class="overlay">
 					</div>
 				<div class="circle">
-					<img style="border-radius: 50%;" src="assets/Worlds_Ehnel.png"/>
-
+					<img style="border-radius: 50%;" src="assets/creative.png" alt="Creative-Coding-Image"/>
 				</div>
-					<p>ArtForWeebs</p>
+					<p>Creative Coding</p>
 				</a>
 
 			</section>
-		</div>
+		</div><!--1st Row Ends Here-->
+
 		<div class="columns">
-			<section class="column is-half">
+			<section class="column is-half"><!--3rd Column-->
 
-				<a href="#" class="card-1 topic-3">
+				<a href="fieldpages/gamed.html" class="card-1 game-d">
 					<div class="overlay">
 					</div>
 				<div class="circle">
-					<img style="border-radius: 50%;" src="assets/Worlds_Ehnel.png"/>
+					<img style="border-radius: 50%;" src="assets/game.png" alt="Game-Design-Image"/>
 
 				</div>
-					<p>ArtForWeebs</p>
+					<p>Game Design</p>
 				</a>
 
 			</section>
-			<section class="column is-half">
 
-				<a href="#" class="card-1 topic-4">
+			<section class="column is-half"><!--4th Column-->
+			
+				<a href="fieldpages/interactived.html" class="card-1 interactive-d">
 					<div class="overlay">
 					</div>
 				<div class="circle">
-					<img style="border-radius: 50%;" src="assets/Worlds_Ehnel.png"/>
+					<img style="border-radius: 50%;" src="assets/interactive.png" alt="Interactive-Design-Image"/>
 
 				</div>
-					<p>ArtForWeebs</p>
+					<p>Interactive Design</p>
 				</a>
 
-				<div>
 			</section>
-		</div>
-	</div>
-</div>
+		</div><!--2nd Row Ends Here-->
+
+	</div><!--Columns Ends Here-->
+</div><!-- Main Content Ends Here-->
 </body>
 </html>
 

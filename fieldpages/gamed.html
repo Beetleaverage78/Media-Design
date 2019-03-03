@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 110%;">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Courses | 3D.html</title>
+	<!--Local CSS/JS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+	<link rel="stylesheet" href="../css/navbar.css"  type="text/css"/>
+    <link rel="stylesheet" href="../main.css"  type="text/css"/>
+	<link rel="stylesheet" href="../css/courses-fields.css" type="text/css"/>
+</head>
+
+<body>
+    <div class="info-container">
+        <div class="field-container">
+            <h2 class="Overpass">Game Design</h2>
+             <div class="icon-bar">
+             <a title="Return to Courses" href="../courses.html"><img class="icons" src="../assets/home-icon.png"/></a> 
+        </div>
+        </div>
+
+        
+
+        <div class="columns">
+            <div class="column is-one-quarter fix-align-right">
+                <div class="tab-container">
+				
+                    <button id="defaultOpen" class="tabclick Montserrat" onclick="openCity(event, 'Overview')">Overview</button>
+                    <p class="drop-down-title Montserrat">Majors</p>
+                        <button class="tabclick Raleway" onclick="openCity(event, 'majorcourse_1')">
+                         <p class="drop-down">MDMDM1</p>
+                        </button>
+                        <button class="tabclick Raleway" onclick="openCity(event, 'majorcourse_2')">
+                         <p class="drop-down">MMMDD2</p>
+                        </button>
+
+                    <p class="drop-down-title Montserrat">Minors</p>
+                        <button class="tabclick Montserrat" onclick="openCity(event, 'minorcourse_1')">
+                            <p class="drop-down">MMD123</p>
+                        </button>
+                        <button class="tabclick Montserrat" onclick="openCity(event, 'minorcourse_2')">
+                            <p class="drop-down">MNFF12</p>
+                        </button>
+                        <button class="tabclick Montserrat" onclick="openCity(event, 'minorcourse_2')">
+                            <p class="drop-down">MOPDF2</p>
+                        </button>
+
+                </div>
+            </div>
+            <div class="column fix-align-left ">
+                <div id="Overview" class="tab_info_content">
+                    <h3>Design Field</h3>
+                    <p>Information/Content Here</p>
+                </div>
+
+                <div id="majorcourse_1" class="tab_info_content">
+                    <h3>MDMDM1</h3>
+                    <p>Major Course - Cost - Duration of Course Etc</p> 
+                </div>
+                <div id="majorcourse_2" class="tab_info_content">
+                    <h3>MMMDD2</h3>
+                    <p>Major Course - Cost - Duration of Course Etc</p> 
+                </div>
+
+                <div id="minorcourse_1" class="tab_info_content">
+                    <h3>MMD123</h3>
+                    <p>Minor Course - Cost - Duration of Course Etc</p>
+                </div>
+                <div id="minorcourse_2" class="tab_info_content">
+                    <h3>MNFF12</h3>
+                    <p>Minor Course - Cost - Duration of Course Etc</p>
+                </div>
+                <div id="minor_course_3" class="tab_info_content">
+                    <h3>MOPDF2</h3>
+                    <p>Minor Course - Cost - Duration of Course Etc</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<script>
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tab_info_content, tabclick;
+
+    // Get all elements with class="tabcontent" and hide them
+    tab_info_content = document.getElementsByClassName("tab_info_content");
+    for (i = 0; i < tab_info_content.length; i++) {
+        tab_info_content[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tabclick = document.getElementsByClassName("tabclick");
+    for (i = 0; i < tabclick.length; i++) {
+        tabclick[i].className = tabclick[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

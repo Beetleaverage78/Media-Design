@@ -5,18 +5,16 @@
 .Overpass {font-family: Overpass, sans-serif;} .Raleway{font-family: Raleway, sans-serif;}
 /*BODY CSS*/
 body {
-	background-color: grey;
+    background-color: white;
+    color: black;
 	margin: 0;
 	font-size: 1.05em;
 	line-height: 1.25em;
-	height: 100%;
+    height: auto;
+    overflow: hidden;
+    font-family: sans-serif;
 }
-/*Testing CSS - For Grid Layout and Such*/
-.outline-1 {
-	background-color: #677c91;
-	margin: 10px;
-	height: auto;
-}
+
 /*------------------------------------------------------------------------------------------*/
 /*CSS That Stays True Across ALl Pages*/
 /*------------------------------------------------------------------------------------------*/
@@ -27,7 +25,8 @@ body {
 }
 
 .rectangle {
-	background-color: #999a9b;
+    background-color: white;
+    margin-top: 100px;
 	position: relative;
 	padding: 10px;
 	height: auto;
@@ -50,7 +49,7 @@ body {
     color: white; 
     
     /*Background CSS*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/placeholder.jpg');
+    background-image: linear-gradient(rgba(89, 127, 133, 0.6), rgba(88, 127, 133, 0.6)), url('assets/placeholder.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -60,12 +59,21 @@ body {
 /*TEXT & ICONS & BORDER*/
 /*------------------------------------------------------------------------------------------*/
 .hero h1 {
-    font-size: 64px;
-    margin-top: 0;
+    font-size: 38px;
+    font-weight: bold;
 }
 .hero h2 {
-    font-size: 18px;
-    margin-top: -20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.hero .inner-hero p {
+    font-size: 14px;
+    color: rgb(209, 209, 209);
+    margin: 100px;
+}
+.button-group {
+    margin: auto;
+    max-width: 410px;
 }
 /*HERO AESTHETICS (BORDER & ICON)*/
 /*------------------------------------------------------------------------------------------*/
@@ -92,39 +100,106 @@ body {
     width: 200px;
     
     /* Padding and margins */
-    padding: 10px;
+    padding: 14px;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     
     /* Text styles */
-    color: white; 
     text-decoration: none;
-    font-size: 12px;
-    
+    font-size: 18px;
+
     /* Border styles */
-    border: 3px solid white; 
-    border-radius: 20px;
+    border-radius: 10px;
+}
+.btn-outline {
+    color: white;
+    border: 3px solid #4B5472;  
+}
+.btn-fill {
+    background-color: #4B5472;
+    color: white;
+    border: 3px solid #4B5472;
 }
 /*BUTTON HOVER*/
 /*------------------------------------------------------------------------------------------*/
-.hero .btn:hover {
+.hero .btn-white:hover {
 	color: black;
 	background-color: white;
+	border: 3px solid white;
+}
+.hero .btn-black:hover {
+    color: black;
+    background-color: white;
+    border: 3px solid white;
+}
+/*------------------------------------------------------------------------------------------*/
+/*INDEX CSS*/
+/*------------------------------------------------------------------------------------------*/
+.home-art {
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: -270px;
+    max-width: 700px;
+    z-index: 10;
+}
+.wave {
+    position: relative;
+    width: 100%;
+    margin-top: -300px;
+}
+.attention {
+	color: #7D86A4;
+	font-weight: bold;
 }
 /*------------------------------------------------------------------------------------------*/
 /*FOOTER CSS*/
 /*------------------------------------------------------------------------------------------*/
 .footer {
-	background-color: rgb(49, 49, 49);
+    background-image: linear-gradient(rgba(23, 33, 34, 0.6), rgba(27, 38, 40, 0.6)), url('assets/placeholder.jpg');
+    border-top: 4px solid white;
 	padding: 30px;
-	color: white;
-	height: auto;
-}
+    color: white;
+	height: 200px;
+    }
+    .inner-footer {
+        max-width: 1000px;
+        margin: auto;
+        width: 100%;
+    }
+    ul.bread {list-style: none;}
+    ul.bread li {
+        display: inline;
+        font-weight: normal;
+        font-size: 12px;
+    }
+
+    ul.bread li+li:before {
+        color: rgb(146, 146, 146);
+        content: "/\00a0";
+    }
+
+    ul.bread li a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    ul.bread li a:hover {
+        color: #000000;
+        text-decoration: underline;
+    }
+    .footer-links, .footer-links a {
+        font-size: 10px;
+        color: white;
+    }
+    .footer-links a:hover {
+        color: black;
+        text-decoration: underline;
+    }
 /*------------------------------------------------------------------------------------------*/
-
-
-
 /*CENTER CSS REFERENCE*/
 /*------------------------------------------------------------------------------------------*/
     /*

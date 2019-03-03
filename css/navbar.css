@@ -1,18 +1,21 @@
-/*RESET*/
+/*RESET CSS*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
 
 /*CSS File Dedicated for Navbar (Seperate from main page css)*/
-/*NAVBAR*/
-a {
+/*---------------------*//*---------------------*/
+/*NAVBAR Text Styles*/
+/*---------------------*//*---------------------*/
+header a {
 	color: white;
 	text-decoration: none;
 	font-weight: bold;
 }
-
-a:hover {color: #444;}
+header a:hover {color: #444;}
 
 img {width: 100%;}
-
+/*---------------------*//*---------------------*/
+/*NAVBAR Background Styles*/
+/*---------------------*//*---------------------*/
 header {
 	background: transparent;
 	width: 100%;
@@ -22,31 +25,41 @@ header {
     left: 0;
     z-index: 100;
 }
-
+/*---------------------*//*---------------------*/
+/*LOGO Styles*/
+/*---------------------*//*---------------------*/
 #logo{
 	margin: 10px;
 	float: left;
-    width: 60px;
-	background: url(https://tinyurl.com/yamzsq8b) no-repeat center;
+    width: 100px;
+	background: url('assets/random_logo.png') no-repeat center;
 	display: block;
 }
-
+/*---------------------*//*---------------------*/
+/*Navbar Items Styles*/
+/*---------------------*//*---------------------*/
 nav {
 	float: right;
 	padding: 20px;	
 }
-
-#menu-icon {
-	display: hidden;
-	width: 40px;
-	height: 40px;
-	background: #4C8FEC url(https://tinyurl.com/yamzsq8b) center;
+/*---------------------*/
+/*Burger Icon Styles (Appears on Mobile)*/
+/*---------------------*/
+#menu-icon img {
+	display: none;
+	width: 60px;
+	height: 60px;
 }
-
-a:hover#menu-icon {
-    background-color: #444;
+a:hover#menu-icon img {
+    background-color: #4B5472;
     border: 2px solid white;
 	border-radius: 4px 4px 0 0;
+}
+/*---------------------*/
+/*Link Styles*/
+/*---------------------*/
+ul li a:hover, .current {
+	color: #d1dbff;
 }
 
 ul {list-style: none;}
@@ -56,31 +69,32 @@ li {
 	float: left;
 	padding: 10px;
 }
-
-.current {color: silver;}
-
+/*---------------------*//*---------------------*/
 /*MOBILE NAVBAR CSS*/
+/*---------------------*//*---------------------*/
 @media only screen and (max-width : 640px) {
 	header {
         position: absolute;
     }
     
-	#menu-icon {
-		display:inline-block;
+	#menu-icon img {
+		display: inline-block;
 	}
 
 	nav ul, nav:active ul { 
 		display: none;
 		position: absolute;
 		padding: 20px;
-		background: grey;
+		background: #4B5472;
 		border: 5px solid white;
 		right: 20px;
-		top: 60px;
+		top: 80px;
         width: 80%;
 		border-radius: 4px 0 4px 4px;
 	}
-
+	
+	.current {color: #A0A7BE;}
+	
 	nav li {
 		text-align: center;
 		width: 100%;
@@ -90,4 +104,8 @@ li {
 
 	nav:hover ul {
 		display: block;
+	}
+	
+	ul li a:hover {
+		color: 	#b8c0db;
 	}

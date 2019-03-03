@@ -3,84 +3,104 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Test.dab | Yeet.html</title>
-	<!--Local CSS/JS-->
+	<link rel="icon" href="assets/random_logo.png">
+	<title>About Page | about.html</title>
+	<!--External CSS Links (Mainly Used for Columns)-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+	<!--Local CSS Links-->
 	<link rel="stylesheet" href="css/navbar.css"  type="text/css"/>
 	<link rel="stylesheet" href="css/about.css" type="text/css"/>
 	<link rel="stylesheet" href="main.css"  type="text/css"/>
 </head>
 
 <body>
+	<!--Navigation Bar HTML-->
 	<header>
-		<a href="index.html" id="logo"><img src="https://tinyurl.com/yamzsq8b"></a>
+		<a title="Course Selector" href="index.html" id="logo"><img src="assets/random_logo.png" alt="course-information-logo"></a>
 		<nav>
-			<a href="#" id="menu-icon"></a>
+			<a href="index.html" id="menu-icon"><img src="assets/burger.png"/></a>
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html" class="current">About</a></li>
+				<li><a href="mediaD.html">Media Design</a></li>
 				<li><a href="courses.html">Courses</a></li>
-				<li><a href="victoria.html">Victoria</a></li>
 				<li><a href="contact.html">Contact</a></li>
+				
 			</ul>
 		</nav>
 	</header>
 
-		<section class="hero">
-			<div class="inner-hero has-text-centered">
-				<h1>What is this?</h1>
-				<h2>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-					tempor incididunt ut <br>qua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-				</h2>
-			</div>
-		</section>
-		<div class="bottom-border"></div>
-		<div class="down-arrow">Icon</div>
-
-	<div class="middle-page">
-		<section class="columns has-text-centered" style="padding: 25px 100px 25px 100px;">
-
-			<div class="column">
-				<div class="profile-bg">
-				</div>
-				<div class="profile-card">
-					<img src="assets/Worlds_Ehnel.png"/>
-					<!--https://bulma.io/images/placeholders/96x96.png-->
-						<h1>Name</h1>
-						<h4>Stakeholder</h4>
-					<div class="divider"></div>
-					<article>
-						Some Content
-					</article>
-				</div>
-			</div>
-
-			<div class="column">
-				<div class="profile-bg">
-				</div>
-				<div class="profile-card">
-					<img src="assets/Worlds_Ellan.png"/>
-						<h1>Name</h1>
-						<h4>Stakeholder</h4>
-					<div class="divider"></div>
-					<article>
-						Some Content
-					</article>
-				</div>
-			</div>
-
-		</section>
-	</div>
-		<section class="more-info has-text-centered">
-			<h1>This is a school project</h1>
-			<img src="https://bulma.io/images/placeholders/96x96.png"/>
-		</section>
-
-	<footer class="footer">
-		<div>
-			Footer
+	<!--Intro-Container HTML - Not to be confused with hero-->
+	<!--Horizontally Centered, Manually Aligned Vertically-->
+	<div class="intro-container has-text-centered">
+		<div class="intro">
+			<h1 class="Raleway">About Us</h1>
+			<p class="Montserrat">No one likes digging, so we'll do the digging for you.</p>
 		</div>
+	</div>
+	
+	<!--Curve Seperator SVG HTML-->
+	<svg class="wave" style="margin-top: 6%;" viewbox="0 0 100 25">
+		<path fill="white" d="M0 30 V8 Q10 10 55 12 T100 8 V60z" />
+	</svg>
+
+	<!--Main Content Seperator HTML-->
+	<div class="seperator">
+		<div class="middle-page">
+		<h1 class="has-text-left h1-title Raleway">What is this?</h1>
+		<section class="about-text">
+			<p>
+				This website was designed specifically for students who are interested in Media Design, which is a specific department
+				that deals with many aspects of design, animation, and even coding. 
+			</p>
+			<br>
+			<p>
+				We are dedicated to making information look as neat
+				as possible, so we have collated all the courses available in 2018 and combined them with their corresponding specializations.
+			</p>
+			<br>
+			<p>Which can be found in the <a href="courses.html">courses page.</a></p>
+		</section>
+		</div>
+	</div>
+
+	<!--Footer Two Columns - HTML-->
+	<footer class="footer Montserrat">
+		<div class="columns inner-footer">
+		
+			<div class="column is-narrow" style="max-width: 600px;">
+				<ul class="bread">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="mediaD.html">MediaDesign</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li style="font-style: 20px; color: rgb(146, 146, 146);">Courses </li>
+					<li><a href="fieldpages/3D.html">3D Design</a></li>
+					<li><a href="fieldpages/creativec.html">Creative Coding</a></li>
+					<li><a href="fieldpages/gamed.html">Game Design</a></li>
+					<li><a href="fieldpages/interactived.html">Interactive Design</a></li>
+				</ul>
+			</div><!--1st Column ends here-->
+
+			<div class="column has-text-right footer-links">
+				<a href="£" target="_blank">0440 - 04404 - 12369</a>
+				<br>
+				<a href="£" target="_blank">Ebugas1@sbc.school.nz</a>
+				<p>© 2018 Course Selector - New Zealand - Wellington</p>
+			</div><!--2nd Column ends here-->
+
+		</div><!--Columns ends here-->
 	</footer>
+
+	<!--More Info Seperator - HTML-->
+	<section class="more-info has-text-centered">
+		<h2 class="Raleway">This is a School Project</h2>
+		<a href="https://www.sbc.school.nz/" target="_blank">
+			<img src="https://www.sbc.school.nz/wp-content/uploads/2016/05/st-bernards-college.png" alt="St Bernards College">
+		</a>
+		<a href="https://bulma.io"  target="_blank">
+			<img src="https://bulma.io/images/made-with-bulma--dark.png" alt="Made with Bulma">
+		</a>
+	</section>
 </body>
 </html>
