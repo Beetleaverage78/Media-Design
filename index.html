@@ -1,0 +1,35 @@
+<!doctype>
+<html>
+<header>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato|Roboto:400,900' rel='stylesheet' type='text/css'>
+</header>
+
+<body>
+
+	<div id="parallax-container">
+		<div style="background: url(https://vectr.com/placidbeetle/c8kSFrpQ9n.png?width=2560&height=1440&select=a8LGFHGpS);"></div>
+		<div style="background: url(https://vectr.com/placidbeetle/c8kSFrpQ9n.png?width=2560&height=1440&select=fPu8rdxuW);"></div>
+		<div style="background: url(https://vectr.com/placidbeetle/c8kSFrpQ9n.png?width=2560&height=1440&select=dIYpL28y2);"></div>
+		<div style="background: url(https://vectr.com/placidbeetle/c8kSFrpQ9n.png?width=2560&height=1440&select=c8kSFrpQ9npage0);"></div>
+	</div>
+
+	<div id="content">
+		
+		<h1>Yeet</h1>
+	</div>
+
+</body>
+<script>
+window.addEventListener('scroll', () => {
+   let parent = document.getElementById('parallax-container');
+   let children = parent.getElementsByTagName('div');
+   for(let i = 0; i < children.length; i++) {
+     children[i].style.transform = 'translateY(-' + (window.pageYOffset * i / children.length) + 'px)';
+   }
+}, false)
+
+</script>
+<html>
+
