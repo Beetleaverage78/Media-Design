@@ -8,15 +8,15 @@ body {
   height: 1200px;
 }
 /* Navigation Bar*/
-.overlay {
+.overlay  {
   height: 0%;
   width: 100%;
   position: fixed;
   z-index: 4;
+  font-family: 'Raleway', sans-serif;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
+  background-color: rgba(13, 14, 16, 0.95);
   overflow-y: hidden;
   transition: 0.5s;
 }
@@ -39,7 +39,7 @@ body {
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: #566495;
 }
 
 .overlay .closebtn {
@@ -67,6 +67,9 @@ body {
     font-size: 50px;
     z-index: 2;
 }
+.burger:hover {
+	color: #566495;
+}
 /* Parallax CSS */
 #parallax-container {
   display: block;
@@ -86,8 +89,8 @@ body {
 #content {
   position: relative;
   text-align: center;
-  background-color: #030f33;
-  color: #ffffff;
+  background-color: white;
+  color: black;
   padding: 100px;
 }
 
@@ -101,4 +104,3 @@ body {
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
 }
-

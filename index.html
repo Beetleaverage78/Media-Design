@@ -8,27 +8,17 @@
 </header>
 
 <body>
-<!-- The overlay -->
-<div id="myNav" class="overlay">
+	<div id="overlaynav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="overlay-content">
+		<a href="#">Creative Coding</a>
+		<a href="#">Game Design</a>
+		<a href="#">Video Design</a>
+		<a href="#">Contact</a>
+	  </div>
+	</div>
+	<span class="burger" onclick="openNav()">&#9776;</span>
 
-  <!-- Button to close the overlay navigation -->
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-  <!-- Overlay content -->
-  <div class="overlay-content">
-    <a href="#">Creative Coding</a>
-    <a href="#">Game Design</a>
-    <a href="#">Vieo Design</a>
-    <a href="#">Contact</a>
-  </div>
-
-</div>
-
-<!-- Use any element to open/show the overlay navigation menu -->
-<span class="burger" onclick="openNav()">&#9776;</span>
-
-    
-    
 	<div id="parallax-container">
 		<div style="background: url(https://vectr.com/placidbeetle/c8kSFrpQ9n.png?width=2560&height=1440&select=a8LGFHGpS);"></div>
 		<div style="background: url(https://vectr.com/placidbeetle/c8kSFrpQ9n.png?width=2560&height=1440&select=fPu8rdxuW);"></div>
@@ -37,9 +27,8 @@
 	</div>
 
 	<div id="content">
-		
 		<h1>BeefYeet</h1>
-        <p>Yeet</p>
+        <p>Grenoodle is the best noodle</p>
 	</div>
 
 </body>
@@ -52,15 +41,12 @@ window.addEventListener('scroll', () => {
    }
 }, false)
 </script>
-
 <script>
 $('#toggle').click(function() {
    $(this).toggleClass('active');
    $('#overlay').toggleClass('open');
   });
-
-function openNav() {document.getElementById("myNav").style.height = "100%";}
-function closeNav() {document.getElementById("myNav").style.height = "0%";}
+function openNav() {document.getElementById("overlaynav").style.height = "100%";}
+function closeNav() {document.getElementById("overlaynav").style.height = "0%";}
 </script>
 <html>
-
