@@ -4,10 +4,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato|Roboto:400,900' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </header>
 
 <body>
+<!-- The overlay -->
+<div id="myNav" class="overlay">
 
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#">Creative Coding</a>
+    <a href="#">Game Design</a>
+    <a href="#">Vieo Design</a>
+    <a href="#">Contact</a>
+  </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<span class="burger" onclick="openNav()">&#9776;</span>
+
+    
+    
 	<div id="parallax-container">
 		<div style="background: url(https://vectr.com/placidbeetle/c8kSFrpQ9n.png?width=2560&height=1440&select=a8LGFHGpS);"></div>
 		<div style="background: url(https://vectr.com/placidbeetle/c8kSFrpQ9n.png?width=2560&height=1440&select=fPu8rdxuW);"></div>
@@ -17,7 +38,8 @@
 
 	<div id="content">
 		
-		<h1>Yeet</h1>
+		<h1>BeefYeet</h1>
+        <p>Yeet</p>
 	</div>
 
 </body>
@@ -29,7 +51,16 @@ window.addEventListener('scroll', () => {
      children[i].style.transform = 'translateY(-' + (window.pageYOffset * i / children.length) + 'px)';
    }
 }, false)
+</script>
 
+<script>
+$('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
+
+function openNav() {document.getElementById("myNav").style.height = "100%";}
+function closeNav() {document.getElementById("myNav").style.height = "0%";}
 </script>
 <html>
 
