@@ -3,8 +3,12 @@
 <header>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="main.css">
+
 	<link href='https://fonts.googleapis.com/css?family=Lato|Roboto:400,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+	
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	
 </header>
 
 <body>
@@ -17,7 +21,8 @@
 		<a href="#">Contact</a>
 	  </div>
 	</div>
-	<span class="burger" onclick="openNav()">&#9776;</span>
+	
+	<span class="burger-icon" onclick="openNav()">&#9776;</span>
 
 	<div id="parallax-container">
 		<div style="background: url(https://vectr.com/placidbeetle/c8kSFrpQ9n.png?width=2560&height=1440&select=a8LGFHGpS);"></div>
@@ -27,8 +32,24 @@
 	</div>
 
 	<div id="content">
-		<h1>BeefYeet</h1>
-        <p>Grenoodle is the best noodle</p>
+		<h1>Topics taught in this course</h1>
+		<div class="row">
+			<div class="col-xs">
+				<p><strong>Creative Coding</strong></p>
+				<p>is a form of computer programming that aims at creating something exoressive rather than functional.</p>
+				<button>Learn more</button>
+			</div>
+			<div class="col-xs">
+				<p><strong>Game Design</strong></p>
+				<p>is the art of using design and aesthetics to produce a game for entertainment, instructional purposes, practice, or experimentation.</p>
+				<button>Learn more</button>
+			</div>
+			<div class="col-xs">
+				<p><strong>Video Design</strong></p>
+				<p>deals with the development and incorporation of film, motion graphics and live camera feed into the fields.</p>
+				<button>Learn more</button>
+			</div>
+		<div>
 	</div>
 
 </body>
