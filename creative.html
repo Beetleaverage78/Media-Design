@@ -1,0 +1,62 @@
+<!doctype>
+<html>
+<header>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="courses.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Lato|Roboto:400,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	
+</header>
+
+<body>
+	<div id="overlaynav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="overlay-content">
+		<a class="active" href="creative.html">Creative Coding</a>
+		<a href="game.html">Game Design</a>
+		<a href="video.html">Video Design</a>
+		<a href="contact.html">Contact</a>
+	  </div>
+	</div>
+	
+	<img class="logo" src="logo.png"/> 
+	<span class="burger-icon" onclick="openNav()">&#9776;</span>
+	
+	<div class="header">
+		<h1>Creative Coding</h1>
+	</div>
+	
+	<div class="main-content">
+		<div class="row">
+			<div class="col-md-6">
+				<h2>Overview</h2>
+				<div class="section-separator"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut,</p> 
+				<p>vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+				<img src="https://designshack.net/wp-content/uploads/placeholder-image.png"/>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus,</p>
+				<p>ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio </p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="student-testimonial">
+	
+		<p>Test</p>
+	
+	</div>
+	
+</body>
+<script>
+$('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
+function openNav() {document.getElementById("overlaynav").style.height = "100%";}
+function closeNav() {document.getElementById("overlaynav").style.height = "0%";}
+</script>
+<html>

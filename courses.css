@@ -1,0 +1,56 @@
+body {
+	background-color: #212329;
+}
+
+.logo {
+	width: 150px;
+	padding: 10px;
+}
+.header h1{
+	margin-top: 100px;
+	font-size: 34px;
+	font-family: 'Capriola', serif;
+	text-align: center;
+}
+
+.main-content {
+	margin-top: 150px;
+	height: auto;
+	background-color: white;
+	color: black;
+}
+
+.main-content .row .col-md-6 {
+	max-width: 600px;
+	height: auto;
+	margin: auto;
+}
+
+.main-content .row .col-md-6 img{
+	width: 560px;
+}
+.main-content div div h2 {
+	font-family: 'Overpass', sans-serif;
+}
+
+.section-separator {
+	margin-left: 0;
+	border-bottom: 6px solid black;
+	width: 100px;
+}
+
+.student-testimonial {
+	background-color: #394262;
+	padding: 30px;
+}
+
+/*Responsive CSS for Small Screens*/
+@media only screen and (max-width: 600px) {
+  .main-content .row .col-md-6 {
+	padding: 30px 40px 30px 40px;
+    background-color: lightblue;
+  }
+  .main-content .row .col-md-6 img {
+	width: 460px;
+  }
+}
