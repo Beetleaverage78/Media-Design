@@ -7,6 +7,10 @@ body {
   background-color: #030f33;
   height: 1200px;
 }
+.logo {
+	width: 150px;
+	padding: 10px;
+}
 /* Overlay Navigation Bar */
 .overlay  {
   height: 0%;
