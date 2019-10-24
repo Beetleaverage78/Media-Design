@@ -147,7 +147,7 @@ button {
 }
 .box {
   padding: 10px 50px 50px 30px;
-  background-color: white;
+  background-color: gray;
   color: black;
 }
 .foot-links h1 {
@@ -155,7 +155,6 @@ button {
   font-family: 'Overpass', serif;
   font-weight: bold;
 }
-
 .foot-links p a {
   font-family: 'Montserrat', serif;
   font-size: 14px;
