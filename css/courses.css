@@ -1,6 +1,7 @@
-/* Initial Page CSS*/
-body {background-color: #212329;}
-/* Heading Section CSS ==================================*/
+body {
+	background-color: #212329;
+}
+/* Heading Section */
 .header h1{
 	margin-top: 80px;
 	font-size: 34px;
@@ -8,17 +9,21 @@ body {background-color: #212329;}
 	text-align: center;
 }
 
-/* Main Section CSS ==================================*/
+/* Main Section */
 .main-content {
 	margin-top: 120px;
-	font-family: 'Montserrat', serif;
 	height: auto;
+	font-family: 'Overpass', serif;
 	background-color: white;
 	color: black;
 }
 
-/* Student Section CSS ==================================*/
-.student-sect {background-color: #394262;padding: 30px;}
+/* Student Section */
+.student-sect {
+	background-color: #394262;
+    padding: 30px;
+}
+
 .btn-group .btn {
     background-color: #9bb0d1; 
     border: 2px solid black; 
@@ -28,25 +33,41 @@ body {background-color: #212329;}
     float: left; 
     text-decoration: none;
 }
-.btn-group .btn:not(:last-child) {border-right: none;}
+
+.btn-group .btn:not(:last-child) {
+    border-right: none; 
+}
+
 .btn-group:after {
     content: "";
     clear: both;
     display: table;
 }
-.btn-group .btn:hover {background-color: black;color: white;}
+
+.btn-group .btn:hover {
+    background-color: black;
+    color: white;
+}
+
 .btn-group a {text-decoration: none; color: white; font-weight: bold;}
+
 .btn-group a:hover {color: cadetblue;}
 
-/* Main & Student Section CSS ==================================*/
+/* Main & Student Section CSS */
 .main-content .row .col-md-6, 
 .student-sect .row .col-md-6 {
 	max-width: 600px;
 	height: auto;
 	margin: auto;
 }
-.main-content .row .col-md-6 img{width: 560px;}
-.main-content div div h2, .student-sect div div {font-family: 'Overpass', sans-serif;}
+
+.main-content .row .col-md-6 img{
+	width: 560px;
+}
+.main-content div div h2, 
+.student-sect div div {
+	font-family: 'Overpass', sans-serif;
+}
 
 .section-separator {
 	margin-left: 0;
@@ -54,7 +75,7 @@ body {background-color: #212329;}
 	width: 100px;
 }
 
-/*Responsive CSS for Small Screens ==================================*/
+/*Responsive CSS for Small Screens*/
 @media only screen and (max-width: 600px) {
   .main-content .row .col-md-6 {
 	padding: 30px 40px 30px 40px;

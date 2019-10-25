@@ -1,31 +1,42 @@
-/* Initial Page CSS ==================================*/
+/* Contact Page CSS */
 body {
-    background-color: #a3b3cc;
-	height: auto;
+    background-color: #9bb0d1;
 }
-/* Centere Boxes CSS ==================================*/
+
 .center-boxes {
-	margin-top: 130px;
+	margin-top: 100px;
 	margin: auto;
 	color: black;
 }
-.center-boxes .row {max-width: 1300px;margin: auto;}
-.box {position: absolute;}
 
-/* Inner Box (Contact Info) ==================================*/
+.center-boxes .row {
+	max-width: 1300px;
+	margin: auto;
+}
+
+.box {
+    position: absolute;                       
+}
+
+/* Inner Box (Contact CSS)*/
 .inner {
     background-color: white;
     border: 2px solid black;
 	position: relative;
-	padding: 60px 12px 110px 120px;
+	padding: 60px 12px 140px 120px;
     width: auto;
     z-index: 0;
 }
-.inner  h2 {font-family: 'Montserrat', sans-serif;}
+
+.inner  h2 {
+	font-family: 'Montserrat', sans-serif;
+}
+
 .inner input {
 	padding: 12px;
 	border: 2px solid black;
     font-family: 'Capriola', serif;
+	
 }
 textarea {
 	width: 100%;
@@ -38,15 +49,17 @@ textarea {
 	background-color: #f8f8f8;
 	resize: none;
 }
+
 .inner button {
     margin-top: 5px;
     background-color: #212329;
     border: 2px solid grey;
     color: white;
 }
+
 .inner button:hover {color: black; background-color: white; cursor: pointer; border: 2px solid black;}
 
-/* Outer Box (Form CSS) ==================================*/
+/* Outer Box (Form CSS)*/
 .outer {
     margin-top: 40px;
 	margin-left: 60px;
@@ -58,19 +71,29 @@ textarea {
     z-index: 1;
     color: white;
 }
-.outer h2 {font-family: 'Montserrat', sans-serif;}
-.outer img {float: left;width: 50px;}
+
+.outer h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+.outer img {
+    float: left;
+    width: 50px;
+}
 .outer p a {
+    float: center;
     margin-top: 10px;
     margin-left: 15px;
     text-decoration: none;
 }
 .outer p a:hover {
     text-decoration: underline;
-	cursor: pointer;
 }
 .scn-contact {
     color: #9bb0d1;
     font-size: 12px;
 }
 .scn-contact:hover {text-decoration: underline;}
+.uni-links a {
+	color: white;
+	text-decoration: none;
+}
